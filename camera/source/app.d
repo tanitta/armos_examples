@@ -11,7 +11,7 @@ class TestApp : ar.BaseApp{
 	
 	void update(){
 		c += 1;
-		camera.position = ar.Vector3f(0+20.0*cos(c*0.05), 0+20.0*sin(c*0.05), -40);
+		camera.position = ar.Vector3f(20.0*cos(c*0.05), 20.0*sin(c*0.05), -40.0);
 	}
 	
 	void draw(){
