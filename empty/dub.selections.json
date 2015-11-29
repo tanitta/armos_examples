@@ -1,0 +1,10 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"armos": "0.0.1",
+		"derelict-sdl2": "1.9.7",
+		"derelict-util": "2.0.4",
+		"derelict-gl3": "1.0.17",
+		"derelict-assimp3": "1.0.1"
+	}
+}
