@@ -15,7 +15,7 @@ class TestApp : ar.BaseApp{
 	}
 	
 	void draw(){
-		camera.start;
+		camera.begin;
 		ar.pushMatrix;
 		ar.setColor(ar.Color(0xFF1F37));
 		ar.boxPrimitive(
