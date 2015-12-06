@@ -26,7 +26,7 @@ class TestApp : ar.BaseApp{
 	}
 	
 	void draw(){
-		camera.start;
+		camera.begin;
 		
 		drawPrimitiveExample(
 			ar.Vector3f(0, 0, 0),
