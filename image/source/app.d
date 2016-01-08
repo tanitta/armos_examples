@@ -2,9 +2,7 @@ import armos;
 
 class TestApp : ar.BaseApp{
 	ar.Image imageLena;
-	
 	ar.Image imageDman;
-	
 	ar.Image imageFromArray;
 	
 	void setup(){
@@ -27,11 +25,6 @@ class TestApp : ar.BaseApp{
 		}
 		
 		imageFromArray.setFromAlignedPixels(cast(char*)array.ptr, 100, 100, ar.ColorFormat.Gray);
-		import std.stdio;
-		imageFromArray.bitmap.pixel(0, 0).element(0).writeln;
-		imageFromArray.bitmap.width.writeln;
-		imageFromArray.bitmap.height.writeln;
-		
 	}
 	
 	void draw(){
