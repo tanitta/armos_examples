@@ -24,7 +24,7 @@ class TestApp : ar.BaseApp{
 			pixel = 255 - cast(ubyte)( ( position-center ).norm*20 );
 		}
 		
-		imageFromArray.setFromAlignedPixels(cast(char*)array.ptr, 100, 100, ar.ColorFormat.Gray);
+		imageFromArray.setFromAlignedPixels(array.ptr, 100, 100, ar.ColorFormat.Gray);
 	}
 	
 	void draw(){
