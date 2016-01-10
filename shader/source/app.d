@@ -6,6 +6,7 @@ class TestApp : ar.BaseApp{
 	float c = 0;
 	void setup(){
 		shader.load("simple");
+		shader.setUniform("color", 1.0f, 1.0f, 0.0f, 1.0f);
 		camera.position = ar.Vector3f(0, 0, -40);
 		camera.target= ar.Vector3f(0, 0, 0);
 		
