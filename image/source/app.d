@@ -13,6 +13,7 @@ class TestApp : ar.BaseApp{
 		
 		imageDman= new ar.Image;
 		imageDman.load("d-man.png");
+		imageDman.setMinMagFilter(ar.TextureFilter.Nearest);
 		
 		imageFromArray = new ar.Image;
 		ubyte[100*100] array;
@@ -23,13 +24,17 @@ class TestApp : ar.BaseApp{
 			position[1] = index/100;
 			pixel = 255 - cast(ubyte)( ( position-center ).norm*20 );
 		}
-		
 		imageFromArray.setFromAlignedPixels(array.ptr, 100, 100, ar.ColorFormat.Gray);
 	}
 	
 	void draw(){
 		imageLena.draw(0, 0);
-		imageDman.draw(140, 50);
+		
+		ar.pushMatrix;
+			ar.scale(10, 10, 1);
+			imageDman.draw(14, 5);
+		ar.popMatrix;
+		
 		imageFromArray.draw(300, 300);
 	}
 }
