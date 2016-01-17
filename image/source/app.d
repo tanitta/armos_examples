@@ -28,6 +28,7 @@ class TestApp : ar.BaseApp{
 	}
 	
 	void draw(){
+		imageLena.drawCropped(512, 512, 256, 256, 512, 512);
 		imageLena.draw(0, 0);
 		
 		ar.pushMatrix;
